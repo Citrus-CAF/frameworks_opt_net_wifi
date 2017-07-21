@@ -831,7 +831,7 @@ public class WifiController extends StateMachine {
                             transitionTo(mApStaEnabledState);
                         } else {
                             mWifiStateMachine.setHostApRunning(null, false);
-                            mPendingState = mStaEnabledState;
+                            mPendingState = mDeviceActiveState;
                         }
                     }
                     break;
